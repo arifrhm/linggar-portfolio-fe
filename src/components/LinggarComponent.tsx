@@ -22,6 +22,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 export function LinggarComponent() {
   return (
@@ -75,7 +76,7 @@ export function LinggarComponent() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">My Projects</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Check out some of the projects I've worked on.
+                  Check out some of the projects I&apos;ve worked on.
                 </p>
               </div>
             </div>
@@ -85,10 +86,10 @@ export function LinggarComponent() {
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
-                <img
+                <Image
                   src="/placeholder.svg"
-                  width="550"
-                  height="310"
+                  width={550}
+                  height={310}
                   alt="Project 1"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                 />
@@ -100,10 +101,10 @@ export function LinggarComponent() {
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
-                <img
+                <Image
                   src="/placeholder.svg"
-                  width="550"
-                  height="310"
+                  width={550}
+                  height={310}
                   alt="Project 2"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                 />
@@ -115,10 +116,10 @@ export function LinggarComponent() {
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
-                <img
+                <Image
                   src="/placeholder.svg"
-                  width="550"
-                  height="310"
+                  width={550}
+                  height={310}
                   alt="Project 3"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                 />
@@ -130,10 +131,10 @@ export function LinggarComponent() {
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 prefetch={false}
               >
-                <img
+                <Image
                   src="/placeholder.svg"
-                  width="550"
-                  height="310"
+                  width={550}
+                  height={310}
                   alt="Project 4"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                 />
@@ -149,7 +150,7 @@ export function LinggarComponent() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">My Skills</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Here are some of the technologies I'm proficient in.
+                  Here are some of the technologies I&apos;m proficient in.
                 </p>
               </div>
             </div>
@@ -215,7 +216,7 @@ export function LinggarComponent() {
   )
 }
 
-function CodepenIcon(props) {
+function CodepenIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -239,7 +240,7 @@ function CodepenIcon(props) {
 }
 
 
-function DatabaseIcon(props) {
+function DatabaseIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -261,7 +262,7 @@ function DatabaseIcon(props) {
 }
 
 
-function LaptopIcon(props) {
+function LaptopIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -281,7 +282,7 @@ function LaptopIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -301,7 +302,7 @@ function MountainIcon(props) {
 }
 
 
-function PiIcon(props) {
+function PiIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
